@@ -38,7 +38,7 @@
 #'                 add_osm_feature("amenity", "pub") 
 #' c (osmdata_sf (q1), osmdata_sf (q2)) # all objects that are restaurants OR pubs
 #' }
-opq <- function (bbox = NULL, timeout = 25, memsize)
+opq <- function (bbox = NULL, timeout = 300, memsize)
 {
     timeout <- format (timeout, scientific = FALSE)
     prefix <- paste0 ("[out:xml][timeout:", timeout, "]")
